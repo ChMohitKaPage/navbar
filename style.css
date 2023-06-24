@@ -156,6 +156,9 @@ main{
         min-width: 350px;
         margin-top: 40px;
     }
+    .left>p{
+        margin: auto;
+    }
     .brands{
         display: flex;
         width: 100vw;
