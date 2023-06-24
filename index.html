@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar-brand">
+        <h1>snap</h1>
+      </div>
+      <div class="navbar-components">
+        <ul class="nav-items">
+          <li class="nav-item dropdown" onclick="dropdownHandler(event)"><span class="dropdown-heading">Features <img
+                src="images/icon-arrow-down.svg" alt="">
+              <div style="padding: 10px;"></div>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><img src="images/icon-todo.svg" alt="" class="menu-icon">Todo List</li>
+                <li class="nav-item"><img src="images/icon-calendar.svg" alt="" class="menu-icon">Calender</li>
+                <li class="nav-item"><img src="images/icon-reminders.svg" alt="" class="menu-icon">Reminders</li>
+                <li class="nav-item"><img src="images/icon-planning.svg" alt="" class="menu-icon">Planning</li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown"><span class="dropdown-heading">Company <img src="images/icon-arrow-down.svg"
+                alt=""></span>
+            <div style="padding: 10px;"></div>
+            <ul class="dropdown-menu">
+              <li class="nav-item">History</li>
+              <li class="nav-item">Our Team</li>
+              <li class="nav-item">Blog</li>
+            </ul>
+          </li>
+          <li class="nav-item">Careers</li>
+          <li class="nav-item">About</li>
+        </ul>
+      </div>
+      <div class="login">
+        <ul class="nav-items">
+          <li class="nav-item">Login</li>
+          <li class="nav-item" style="border: solid; border-radius: 10px;">Register</li>
+        </ul>
+      </div>
+      <button class="menu-button" onclick="clickHandler()"><img src="images/icon-menu.svg" alt=""></button>
+    </div>
+  </header>
+  <main>
+    <div class="left">
+      <h1>Make</h1>
+      <h1>remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="btn">
+        Learn more
+      </button>
+      <div class="brands">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <img src="images/image-hero-desktop.png" class="desktop-view" alt="">
+      <img src="images/image-hero-mobile.png" class="mobile-view" alt="">
+    </div>
+
+  </main>
+
+  <footer>
+
+    <ul id="mobile-menu">
+      <button style="position: relative; left: 80%; background-color: inherit;" onclick="clickHandler2()"><img
+          src="images/icon-close-menu.svg" alt=""></button>
+      <li class="nav-item dropdown" onclick="dropdownHandler(event)"><span class="dropdown-heading">Features <img
+            src="images/icon-arrow-down.svg" alt="">
+          <div style="padding: 10px;"></div>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><img src="images/icon-todo.svg" alt="" class="menu-icon">Todo List</li>
+            <li class="nav-item"><img src="images/icon-calendar.svg" alt="" class="menu-icon">Calender</li>
+            <li class="nav-item"><img src="images/icon-reminders.svg" alt="" class="menu-icon">Reminders</li>
+            <li class="nav-item"><img src="images/icon-planning.svg" alt="" class="menu-icon">Planning</li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown"><span class="dropdown-heading">Company <img src="images/icon-arrow-down.svg"
+            alt=""></span>
+        <div style="padding: 10px;"></div>
+        <ul class="dropdown-menu">
+          <li class="nav-item">History</li>
+          <li class="nav-item">Our Team</li>
+          <li class="nav-item">Blog</li>
+        </ul>
+      </li>
+      <li class="nav-item">Careers</li>
+      <li class="nav-item">About</li>
+      <li>
+        <div>
+          <ul class="nav-items">
+            <li class="nav-item">Login</li>
+            <li class="nav-item" style="border: solid; border-radius: 10px;">Register</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </footer>
+</body>
+<script>
+  function clickHandler() {
+    document.querySelector('footer').style.display = 'block'
+  }
+  function clickHandler2() {
+    document.querySelector('footer').style.display = 'none'
+  }
+</script>
+
+</html>
